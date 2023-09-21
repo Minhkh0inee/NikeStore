@@ -10,6 +10,7 @@ import { SignInComponent } from './pages/sign-in/sign-in.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductCardComponent } from './core/components/product-card/product-card.component';
 import { ProductMenComponent } from './pages/product-men/product-men.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ProductMenComponent } from './pages/product-men/product-men.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
