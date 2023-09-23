@@ -50,7 +50,7 @@ export class ProductMenComponent implements OnInit {
     price: "1,019,000"
   }, {
     img: "assets/images/essentials-img-1.jpg",
-    status: 'Just In',
+    status: 'Out Of Stock',
     type: 'Nike Sportswear',
     name: "Men's Max90 T-Shirt",
     color: 2,
@@ -70,6 +70,35 @@ export class ProductMenComponent implements OnInit {
     color: 2,
     price: "1,019,000"
   }];
+
+  // Initialize checkbox values
+  categoryASelected: boolean = false;
+  categoryBSelected: boolean = false;
+
+
+
+  filterProducts() {
+
+    if (!this.categoryASelected && !this.categoryBSelected) {
+      return this.cardData;
+    }
+
+
+    // Filter products based on checkbox selections
+    return this.cardData.filter(product => {
+      if (this.categoryASelected && this.categoryBSelected) {
+        return true; // Show all products when both checkboxes are selected
+      } else if (this.categoryASelected) {
+        return product.status === 'Just In' || 'just in';
+      } else if (this.categoryBSelected) {
+        return product.status === 'Out Of Stock';
+      } else {
+        return false; // No checkboxes selected, don't show any products
+      }
+    });
+  }
+
+
 
   public productList: any[]=[]
 

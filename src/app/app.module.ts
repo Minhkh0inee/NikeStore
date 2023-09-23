@@ -11,6 +11,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProductCardComponent } from './core/components/product-card/product-card.component';
 import { ProductMenComponent } from './pages/product-men/product-men.component';
 import {HttpClientModule} from "@angular/common/http";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -23,11 +24,12 @@ import {HttpClientModule} from "@angular/common/http";
     ProductCardComponent,
     ProductMenComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
