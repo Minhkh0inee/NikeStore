@@ -15,56 +15,56 @@ import {
 export class ProductMenComponent implements OnInit {
   cardData = [{
     img: "assets/images/essentials-img-1.jpg",
-    status: 'Just In',
+    status: 0,
     type: 'Nike Sportswear',
     name: "Men's Max90 T-Shirt",
     color: 2,
     price: "1,019,000"
   }, {
     img: "assets/images/essentials-img-1.jpg",
-    status: 'Just In',
+    status: 0,
     type: 'Nike Sportswear',
     name: "Men's Max90 T-Shirt",
     color: 2,
     price: "1,019,000"
   }, {
     img: "assets/images/essentials-img-1.jpg",
-    status: 'Just In',
+    status: 1,
     type: 'Nike Sportswear',
     name: "Men's Max90 T-Shirt",
     color: 2,
     price: "1,019,000"
   }, {
     img: "assets/images/essentials-img-1.jpg",
-    status: 'Just In',
+    status: 1,
     type: 'Nike Sportswear',
     name: "Men's Max90 T-Shirt",
     color: 2,
     price: "1,019,000"
   }, {
     img: "assets/images/essentials-img-1.jpg",
-    status: 'Just In',
+    status: 1,
     type: 'Nike Sportswear',
     name: "Men's Max90 T-Shirt",
     color: 2,
     price: "1,019,000"
   }, {
     img: "assets/images/essentials-img-1.jpg",
-    status: 'Out Of Stock',
+    status: 0,
     type: 'Nike Sportswear',
     name: "Men's Max90 T-Shirt",
     color: 2,
     price: "1,019,000"
   }, {
     img: "assets/images/essentials-img-1.jpg",
-    status: 'Just In',
+    status: 1,
     type: 'Nike Sportswear',
     name: "Men's Max90 T-Shirt",
     color: 2,
     price: "1,019,000"
   }, {
     img: "assets/images/essentials-img-1.jpg",
-    status: 'Just In',
+    status: 1,
     type: 'Nike Sportswear',
     name: "Men's Max90 T-Shirt",
     color: 2,
@@ -80,18 +80,18 @@ export class ProductMenComponent implements OnInit {
   filterProducts() {
 
     if (!this.categoryASelected && !this.categoryBSelected) {
-      return this.cardData;
+      return this.productList;
     }
 
 
     // Filter products based on checkbox selections
-    return this.cardData.filter(product => {
+    return this.productList.filter(product => {
       if (this.categoryASelected && this.categoryBSelected) {
         return true; // Show all products when both checkboxes are selected
       } else if (this.categoryASelected) {
-        return product.status === 'Just In' || 'just in';
+        return product.status === 1;
       } else if (this.categoryBSelected) {
-        return product.status === 'Out Of Stock';
+        return product.status === 2;
       } else {
         return false; // No checkboxes selected, don't show any products
       }
