@@ -105,32 +105,32 @@
     <div class="border-b-2 border-gray-200 pb-3 pt-3 w-52">
       <div class="text-lg font-bold mb-5">Gender</div>
       <div>
-        <input type="checkbox" class="text-lg font-medium mb-3 mr-2">Men
+        <input type="checkbox" [(ngModel)]="categoryMenSelected"  class="text-lg font-medium mb-3 mr-2">Men
       </div>
       <div>
-        <input type="checkbox" class="text-lg font-medium mb-3 mr-2">Women
+        <input type="checkbox" [(ngModel)]="categoryWomenSelected" class="text-lg font-medium mb-3 mr-2">Women
       </div>
       <div>
-        <input type="checkbox" class="text-lg font-medium mb-3 mr-2">Unisex
+        <input type="checkbox"  [(ngModel)]="categoryUnisexSelected"  class="text-lg font-medium mb-3 mr-2">Unisex
       </div>
     </div>
 
     <div class="border-b-2 border-gray-200 pb-3 pt-3 w-52">
       <div class="text-lg font-bold mb-5">Fit</div>
       <div>
-        <input type="checkbox" class="text-lg font-medium mb-3 mr-2">Oversize
+        <input type="checkbox" [(ngModel)]="categoryOversizeSelected" class="text-lg font-medium mb-3 mr-2">Oversize
       </div>
       <div>
-        <input type="checkbox" class="text-lg font-medium mb-3 mr-2">Loose
+        <input type="checkbox" [(ngModel)] = "categoryLooseSelected" class="text-lg font-medium mb-3 mr-2">Loose
       </div>
       <div>
-        <input type="checkbox" class="text-lg font-medium mb-3 mr-2">Slim
+        <input type="checkbox" [(ngModel)] = " categorySlimSelected" class="text-lg font-medium mb-3 mr-2">Slim
       </div>
       <div>
-        <input type="checkbox" class="text-lg font-medium mb-3 mr-2">Standard
+        <input type="checkbox" [(ngModel)] = "categoryStandardSelected" class="text-lg font-medium mb-3 mr-2">Standard
       </div>
       <div>
-        <input type="checkbox" class="text-lg font-medium mb-3 mr-2">Tight
+        <input type="checkbox" [(ngModel)] = "categoryTightSelected" class="text-lg font-medium mb-3 mr-2">Tight
       </div>
     </div>
 
@@ -148,16 +148,16 @@
     <div class="border-b-2 border-gray-200 pb-3 pt-3 w-52">
       <div class="text-lg font-bold mb-5">Shop By Price</div>
       <div>
-        <input type="checkbox" class="text-lg font-medium mb-3 mr-2">Under 1,000,000
+        <input type="checkbox" [(ngModel)]="categoryUnder1000000Selected" class="text-lg font-medium mb-3 mr-2">Under 1,000,000
       </div>
       <div>
-        <input type="checkbox" class="text-lg font-medium mb-3 mr-2">1,000,000 - 2,000,000
+        <input type="checkbox" [(ngModel)]="categoryFrom1000000To2000000Selected" class="text-lg font-medium mb-3 mr-2">1,000,000 - 2,000,000
       </div>
       <div>
-        <input type="checkbox" class="text-lg font-medium mb-3 mr-2">2,000,000 - 4,999,999
+        <input type="checkbox" [(ngModel)]="categoryFrom2000000To4999999TightSelected" class="text-lg font-medium mb-3 mr-2">2,000,000 - 4,999,999
       </div>
       <div>
-        <input type="checkbox" class="text-lg font-medium mb-3 mr-2">Over 5,000,000
+        <input type="checkbox" [(ngModel)]="categoryAbove5000000StandardSelected" class="text-lg font-medium mb-3 mr-2">Over 5,000,000
       </div>
     </div>
   </div>

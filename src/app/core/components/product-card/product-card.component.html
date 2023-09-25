@@ -1,14 +1,14 @@
 <div class="w-36 md:w-96">
   <div class="h-3/4 w-full">
-    <img [src]="data.productImg" alt="" class="w-full h-full object-cover">
+    <img [src]="data.productImg" alt="" class="w-full h-fullng object-cover">
   </div>
   <div class="text-left ml-3 mt-3 pb-3">
     <div class="text-xs">
-      <div class="text-left ml-3 mt-3 pb-3">
+      <div class="text-left mt-3 pb-3">
         <div class="text-xs">
-          <ng-container *ngIf="data.status === true; else otherStatus">
+          <span *ngIf="data.status === true; else otherStatus">
             Just In
-          </ng-container>
+          </span>
           <ng-template #otherStatus>
             Out of Stock
           </ng-template>
@@ -17,7 +17,7 @@
       <div class="font-bold">{{data.productType}}</div>
       <div class="text-gray-500">{{data.productName}}</div>
       <div class="text-gray-500">{{data.colour}} Colours</div>
-      <div class="mt-6 text-base">{{data.prices}}</div>
+      <div class="mt-6 text-base">{{data.prices | number}} vnd</div>
     </div>
   </div>
 
