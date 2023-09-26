@@ -12,6 +12,8 @@ import { ProductCardComponent } from './core/components/product-card/product-car
 import { ProductMenComponent } from './pages/product-men/product-men.component';
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
+import { CrudComponent } from './pages/admin/crud/crud.component';
+import { ProductDetailComponent } from './pages/product-men/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import {FormsModule} from "@angular/forms";
     SignInComponent,
     HomeComponent,
     ProductCardComponent,
-    ProductMenComponent
+    ProductMenComponent,
+    CrudComponent,
+    ProductDetailComponent
   ],
     imports: [
         BrowserModule,

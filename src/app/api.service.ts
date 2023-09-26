@@ -10,8 +10,8 @@ export class ApiService {
   private apiUrl = 'http://localhost:3000/api'
   constructor(private http:HttpClient) { }
 
+  //get all products
   getProducts(){
-
-    return this.http.get(`${this.apiUrl}/products`);
+    return this.http.get(`${this.apiUrl}/products/list`);
   }
 }

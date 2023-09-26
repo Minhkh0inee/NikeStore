@@ -13,64 +13,6 @@ import {
   styleUrls: ['./product-men.component.scss']
 })
 export class ProductMenComponent implements OnInit {
-  cardData = [{
-    img: "assets/images/essentials-img-1.jpg",
-    status: 0,
-    type: 'Nike Sportswear',
-    name: "Men's Max90 T-Shirt",
-    color: 2,
-    price: "1,019,000"
-  }, {
-    img: "assets/images/essentials-img-1.jpg",
-    status: 0,
-    type: 'Nike Sportswear',
-    name: "Men's Max90 T-Shirt",
-    color: 2,
-    price: "1,019,000"
-  }, {
-    img: "assets/images/essentials-img-1.jpg",
-    status: 1,
-    type: 'Nike Sportswear',
-    name: "Men's Max90 T-Shirt",
-    color: 2,
-    price: "1,019,000"
-  }, {
-    img: "assets/images/essentials-img-1.jpg",
-    status: 1,
-    type: 'Nike Sportswear',
-    name: "Men's Max90 T-Shirt",
-    color: 2,
-    price: "1,019,000"
-  }, {
-    img: "assets/images/essentials-img-1.jpg",
-    status: 1,
-    type: 'Nike Sportswear',
-    name: "Men's Max90 T-Shirt",
-    color: 2,
-    price: "1,019,000"
-  }, {
-    img: "assets/images/essentials-img-1.jpg",
-    status: 0,
-    type: 'Nike Sportswear',
-    name: "Men's Max90 T-Shirt",
-    color: 2,
-    price: "1,019,000"
-  }, {
-    img: "assets/images/essentials-img-1.jpg",
-    status: 1,
-    type: 'Nike Sportswear',
-    name: "Men's Max90 T-Shirt",
-    color: 2,
-    price: "1,019,000"
-  }, {
-    img: "assets/images/essentials-img-1.jpg",
-    status: 1,
-    type: 'Nike Sportswear',
-    name: "Men's Max90 T-Shirt",
-    color: 2,
-    price: "1,019,000"
-  }];
-
   // Initialize checkbox values
   categoryASelected: boolean = false;
   categoryBSelected: boolean = false;
